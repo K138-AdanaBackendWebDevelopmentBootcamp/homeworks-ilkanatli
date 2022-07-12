@@ -18,6 +18,11 @@ public class Course {
     private  String courseCode;
     private int creditScore;
 
+    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL, targetEntity = Instructor.class)
+    private Instructor instructor;
+
+    @ManyToMany(fetch = FetchType.LAZY, targetEntity = Student.class,cascade = CascadeType.ALL, mappedBy = "courseList")
+    private List<Student> studentList = new ArrayList<>();
 
     public Course(String courseName, String courseCode, int creditScore) {
         this.courseName = courseName;
@@ -33,9 +38,6 @@ public class Course {
         this.creditScore = creditScore;
     }
 
-    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL, targetEntity = Instructor.class)
-    private Instructor instructor;
-
     public Course(String courseName, String courseCode, int creditScore, Instructor instructor, List<Student> studentList) {
         this.courseName = courseName;
         this.courseCode = courseCode;
@@ -43,9 +45,6 @@ public class Course {
         this.instructor = instructor;
         this.studentList = studentList;
     }
-
-    @ManyToMany(fetch = FetchType.LAZY, targetEntity = Student.class,cascade = CascadeType.ALL, mappedBy = "courseList")
-    private List<Student> studentList = new ArrayList<>();
 
     public List<Student> getStudentList() {
         return studentList;
@@ -79,6 +78,17 @@ public class Course {
         return id;
     }
 
+    public Instructor getInstructor() {
+        return null;
+    }
+
+    public List<Student> getStudents() {
+        return null;
+    }
+
+    public void setInstructor(VisitingResearcher visitingResearcher) {
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -99,8 +109,5 @@ public class Course {
                 ", courseCode='" + courseCode + '\'' +
                 ", creditScore=" + creditScore +
                 '}';
-    }
-
-    public void setInstructor(Instructor visitingResearcher1) {
     }
 }

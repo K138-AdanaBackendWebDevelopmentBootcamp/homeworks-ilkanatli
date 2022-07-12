@@ -45,8 +45,6 @@ public class Student {
     public Student() {
     }
 
-
-
     public String getName() {
         return name;
     }
@@ -95,5 +93,15 @@ public class Student {
     @Override
     public int hashCode() {
         return Objects.hash(name, birthdate, address, gender);
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", birthdate=" + birthdate +
+                ", address='" + address + '\'' +
+                ", gender='" + gender + '\'' +
+                '}';
     }
 }

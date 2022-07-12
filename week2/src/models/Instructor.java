@@ -69,6 +69,12 @@ public abstract class Instructor {
         return id;
     }
 
+    public void setCourseList(List<Course> courseList) {
+        if (courseList.size() > 0) {
+            this.courseList = courseList;
+        }
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
