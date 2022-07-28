@@ -5,12 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>groupId</groupId>
-    <artifactId>OdevHafta1</artifactId>
+    <artifactId>week1</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-
-    <packaging>pom</packaging>
-   <modules>
-       <module>week01</module>
-   </modules>
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+    
 </project>
