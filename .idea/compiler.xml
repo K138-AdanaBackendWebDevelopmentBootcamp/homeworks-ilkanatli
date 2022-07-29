@@ -7,14 +7,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="week03" />
         <module name="week01" />
+        <module name="week3" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="OdevHafta1" target="1.5" />
       <module name="week01" target="1.8" />
       <module name="week03" target="1.8" />
+      <module name="week04" target="1.8" />
+      <module name="week1" target="1.8" />
       <module name="week3" target="1.8" />
       <module name="week4" target="1.8" />
     </bytecodeTargetLevel>
@@ -22,6 +24,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="week03" options="-parameters" />
+      <module name="week04" options="-parameters" />
       <module name="week3" options="-parameters" />
       <module name="week4" options="-parameters" />
     </option>
