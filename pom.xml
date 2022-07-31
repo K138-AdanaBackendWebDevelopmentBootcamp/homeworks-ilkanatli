@@ -11,6 +11,6 @@
 
     <packaging>pom</packaging>
    <modules>
-       <module>week01</module>
+       <module>week3</module>
    </modules>
 </project>

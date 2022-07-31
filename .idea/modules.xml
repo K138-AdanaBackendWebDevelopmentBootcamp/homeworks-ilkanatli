@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Graduation Project/Graduation Project.iml" filepath="$PROJECT_DIR$/Graduation Project/Graduation Project.iml" />
       <module fileurl="file://$PROJECT_DIR$/OdevHafta1.iml" filepath="$PROJECT_DIR$/OdevHafta1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/week3/SchoolManagementSystem03.iml" filepath="$PROJECT_DIR$/week3/SchoolManagementSystem03.iml" />
       <module fileurl="file://$PROJECT_DIR$/homeworks-ilkanatli-OdevHafta2/homeworks-ilkanatli-OdevHafta2.iml" filepath="$PROJECT_DIR$/homeworks-ilkanatli-OdevHafta2/homeworks-ilkanatli-OdevHafta2.iml" />
       <module fileurl="file://$PROJECT_DIR$/week1/week01.iml" filepath="$PROJECT_DIR$/week1/week01.iml" />
       <module fileurl="file://$PROJECT_DIR$/week1/week1.iml" filepath="$PROJECT_DIR$/week1/week1.iml" />
       <module fileurl="file://$PROJECT_DIR$/week2/week2.iml" filepath="$PROJECT_DIR$/week2/week2.iml" />
       <module fileurl="file://$PROJECT_DIR$/SchoolManagementSystem03/week3.iml" filepath="$PROJECT_DIR$/SchoolManagementSystem03/week3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/week4/week4.iml" filepath="$PROJECT_DIR$/week4/week4.iml" />
     </modules>
   </component>
 </project>

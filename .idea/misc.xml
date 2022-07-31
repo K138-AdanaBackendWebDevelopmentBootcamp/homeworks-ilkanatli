@@ -8,8 +8,10 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/week4/pom.xml" />
         <option value="$PROJECT_DIR$/SchoolManagementSystem03/pom.xml" />
+        <option value="$PROJECT_DIR$/week3/pom.xml" />
+        <option value="$PROJECT_DIR$/week4/pom.xml" />
+        <option value="$PROJECT_DIR$/Graduation Project/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
