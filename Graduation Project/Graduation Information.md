@@ -1,10 +1,11 @@
 # GRADUATION INFORMATION
 ---
 ## Business Rules Sceneaio
-![](C:\Users\İlkan\Desktop\Ekran Alıntısı.PNG)
+
+![](<img src="C:\Users\İlkan\Desktop\Ekran Alıntısı.PNG"/>)
 
 ## Business Rules
---
+---
 -Rearrange all your entities using the Lombok library.
 -Use H2 database as database. Print the test data that you will prepare with the CommandlineRunner interface to the H2 database at the bootstrap stage.
 -Use CrudRepository instead of entitymanager in the DAO layer to respond to endpoints that comply with the following business rules;
