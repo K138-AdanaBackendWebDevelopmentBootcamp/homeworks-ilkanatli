@@ -1,5 +1,6 @@
 package dev.patika.graduationproject.models;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -19,8 +20,8 @@ public class Student {
     private LocalDate birthDate;
     private String address;
     private String gender;
-    @ManyToMany(targetEntity = Student.class, cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+
+    @JsonBackReference
+    @ManyToMany(mappedBy = "students")
     private List<Course> courseList;
-
-
 }

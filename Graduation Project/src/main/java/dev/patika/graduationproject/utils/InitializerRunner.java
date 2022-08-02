@@ -21,7 +21,9 @@ import java.util.List;
 @Component
 @RequiredArgsConstructor
 public class InitializerRunner implements CommandLineRunner {
+
     private static final Logger logger = LoggerFactory.getLogger(InitializerRunner.class);
+
     private final CourseRepository courseRepository;
     private final InstructorRepository instructorRepository;
     private final StudentRepository studentRepository;
@@ -40,7 +42,7 @@ public class InitializerRunner implements CommandLineRunner {
         course1.setCreditScore(10);
 
         Course course2 = new Course();
-        course2.setName("HS");
+        course2.setName("ENGLISH");
         course2.setCode(553);
         course2.setCreditScore(8);
 
@@ -52,19 +54,19 @@ public class InitializerRunner implements CommandLineRunner {
         VisitingResearcher instructor1 = new VisitingResearcher();
         instructor1.setName("Batuhan Aydın");
         instructor1.setAddress("İzmir");
-        instructor1.setHourlySalary(29);
+        instructor1.setHourlySalary(2900);
         instructor1.setPhoneNo("5531235656");
 
         PermanentInstructor instructor2 = new PermanentInstructor();
         instructor2.setName("Ali Temiz");
         instructor2.setAddress("İstanbul");
-        instructor2.setFixedSalary(30);
+        instructor2.setFixedSalary(3000);
         instructor2.setPhoneNo("5447891212");
 
         PermanentInstructor instructor3 = new PermanentInstructor();
         instructor3.setName("Gamze Yılmaz");
         instructor3.setAddress("Ankara");
-        instructor3.setFixedSalary(25);
+        instructor3.setFixedSalary(2500);
         instructor3.setPhoneNo("5357594623");
 
         Student student1 = new Student();
@@ -166,7 +168,6 @@ public class InitializerRunner implements CommandLineRunner {
         studentRepository.save(student6);
 
         logger.info("All test data saved..");
-
     }
 }
 

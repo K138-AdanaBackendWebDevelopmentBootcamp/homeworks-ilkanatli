@@ -10,10 +10,6 @@ import javax.persistence.Entity;
 @Entity
 public class PermanentInstructor extends Instructor {
     private double fixedSalary;
-    public PermanentInstructor(double fixedSalary) {
-        this.fixedSalary = fixedSalary;
-        setSalary(fixedSalary);
-    }
 
     public void setFixedSalary(double fixedSalary) {
         this.fixedSalary = fixedSalary;

@@ -10,6 +10,7 @@ import javax.persistence.Entity;
 @Entity
 public class VisitingResearcher extends Instructor {
     private double hourlySalary;
+
     private static final int HOUR_MULTIPLY_MONTH = 8 * 30;
     public VisitingResearcher(double hourlySalary) {
         this.hourlySalary = hourlySalary;
